@@ -387,7 +387,8 @@ img {
 	}
 	/* First section */
 	.first-hightlight-wrapper {
-		background-image: url("../images/home/ipodPronew.jpg");
+		/* background-image: url("../images/home/ipodPronew.jpg"); */
+		background-image: url("../../assets/images/home/ipodPronew.jpg");
 		min-height: 692px;
 	}	
 	.ipod-caption {

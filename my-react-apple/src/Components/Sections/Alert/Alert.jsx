@@ -3,10 +3,10 @@ import React from "react";
 const Alert = () => {
   return (
     <>
-      <section class="alert-section top-50">
-        <div class="container">
-          <div class="alert-title">We’re open for you.</div>
-          <div class="alert-text">
+      <section className="alert-section top-50">
+        <div className="container">
+          <div className="alert-title">We’re open for you.</div>
+          <div className="alert-text">
             Our retail stores are closed, but you can buy our products here
             online and get fast, free delivery. If you need help finding the
             right product or have a question on your order, chat online with a

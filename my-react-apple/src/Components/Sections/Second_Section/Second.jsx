@@ -4,19 +4,19 @@ const Second = () => {
   return (
     <>
       {/* <!-- Second section starts here --> */}
-      <section class="second-hightlight-wrapper">
-        <div class="container">
-          <div class="new-alert">New</div>
+      <section className="second-hightlight-wrapper">
+        <div className="container">
+          <div className="new-alert">New</div>
 
-          <div class="title-wraper bold black">MacBook Air</div>
+          <div className="title-wraper bold black">MacBook Air</div>
 
-          <div class="description-wrapper black">
+          <div className="description-wrapper black">
             Twice the speed. Twice the storage.
           </div>
 
-          <div class="price-wrapper grey">From $999.</div>
+          <div className="price-wrapper grey">From $999.</div>
 
-          <div class="links-wrapper">
+          <div className="links-wrapperDiff">
             <ul>
               <li>
                 <a href="">Learn more</a>

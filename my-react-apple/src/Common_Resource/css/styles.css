@@ -103,7 +103,7 @@ img {
 }
 /*Sixth Section*/
 .sixth-heghlight-wrapper .left-side-wrapper .left-side-container{
-	background-image:  url("../images/home/spyder.jpg"); 
+	background-image:  url("../../assets/images/home/spyder.jpg"); 
 	background-color: #000;
 	background-position: bottom;
 	padding-top: 35px;
@@ -111,7 +111,8 @@ img {
 	background-size: cover;		
 }
 .sixth-heghlight-wrapper .right-side-wrapper .right-side-container{
-	background-image:  url("../images/home/apple-card-monthly.jpg"); 
+	/* background-image:  url("../images/home/apple-card-monthly.jpg");  */
+	background-image:  url("../../assets//images/home/apple-card-monthly.jpg"); 
 	background-color: #fbfbfd;
 	background-position: bottom;
 	padding-top: 35px;
@@ -177,14 +178,39 @@ img {
 	font-size: 21px;
 }
 .links-wrapper ul li a:hover {
-	color: #000;
+	color:white;
 }
 .links-wrapper ul li a:after {
-  font-family: "FontAwesome";
-  font-weight: 900;
-  content: "\f105";
-  padding-left: 10px;
+	font-family: "FontAwesome";
+	font-weight: 900;
+	content: "\f105";
+	padding-left: 10px;
+  }
+
+
+
+.links-wrapperDiff{
+	padding: 15px 0;
 }
+.links-wrapperDiff ul li {
+	display: inline-block;
+	padding-right: 20px;
+}
+.links-wrapperDiff ul li a {
+	color: #06c;
+	text-decoration: none;
+	font-size: 21px;
+}
+.links-wrapperDiff ul li a:hover{
+	color:black;
+}
+.links-wrapperDiff ul li a:after {
+	font-family: "FontAwesome";
+	font-weight: 900;
+	content: "\f105";
+	padding-left: 10px;
+  }
+
 .title-wraper {
   font-weight: 600;
   font-size: 30px;
@@ -207,14 +233,16 @@ img {
 }
 /*Fifth Section*/
 .fifth-heghlight-wrapper .left-side-wrapper .left-side-container{
-	background-image:  url("../images/home/actors.jpg"); 
+	/* background-image:  url("../images/home/actors.jpg");  */
+	background-image:  url("../../assets/images/home/actors.jpg");
 	background-color: #000;
 	padding-top: 35px;
 	margin: 0 0 10px 0;
 	background-size: cover;		
 }
 .fifth-heghlight-wrapper .right-side-wrapper .right-side-container{
-	background-image:  url("../images/home/watch.jpg"); 
+	/* background-image:  url("../images/home/watch.jpg");  */
+	background-image:  url("../../assets//images/home/watch.jpg"); 
 	background-color: #fbfbfd;
 	background-position: bottom;
 	padding-top: 35px;
@@ -240,15 +268,15 @@ img {
 	padding: 340px 0 0px;
 }
 /* Fourth section */
-.fourth-heghlight-wrapper .left-side-wrapper .left-side-container{
-	background-image:  url("../images/home/iphone11-colored.jpg"); 
+.left-side-wrapper .left-side-container{
+	background-image:  url("../../assets/images/home/iphone11-colored.jpg"); 
 	background-color: #000;
 	padding-top: 35px;
 	margin: 0 0 10px 0;
 	background-size: cover;		
 }
-.fourth-heghlight-wrapper .right-side-wrapper .right-side-container{
-	background-image:  url("../images/home/apple-blue-logo.jpg"); 
+.right-side-wrapper .right-side-container{
+	background-image:  url("../../assets/images/home/apple-blue-logo.jpg"); 
 	background-color: #165ca9;
 	background-position: bottom;
 	padding-top: 35px;
@@ -258,12 +286,13 @@ img {
 .links-wrapper.white li a {
 	color: #fff;
 }
-.fourth-heghlight-wrapper .right-side-wrapper .title-wraper {
+ .right-side-wrapper .title-wraper {
     max-width: 380px;
 }
 /*Third section*/
 .third-hightlight-wrapper {
-	background-image: url("../images/home/iphone11-pro-bg.jpg");
+	/* background-image: url("../images/home/iphone11-pro-bg.jpg"); */
+	background-image: url("../../assets/images/home/iphone11-pro-bg.jpg");
 	height: 580px;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -274,7 +303,7 @@ img {
 }
 /*Second section*/
 .second-hightlight-wrapper {
-	background-image: url("../images/home/macbookair-new-sm.jpg");
+	background-image: url("../../assets/images/home/macbookair-new-sm.jpg");
 	height: 580px;
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -287,7 +316,8 @@ img {
 }
 /*First Section*/
 .first-hightlight-wrapper{
-	background-image: url("../images/home/ipodPronew-sm.jpg");
+	/* background-image: url("../images/home/ipodPronew-sm.jpg"); */
+	background-image: url("../../assets/images/home/ipodPronew-sm.jpg");
 	height: 580px;
 	background-position: bottom;
 	background-repeat: no-repeat;
@@ -367,10 +397,10 @@ img {
 	    margin: 5px 10px 5px 5px;
 	}
 	/*fourth section*/
-	.fourth-heghlight-wrapper .left-side-wrapper .left-side-container {
+	.left-side-wrapper .left-side-container {
 	    margin: 10px 5px 5px 10px;
 	}
-	.fourth-heghlight-wrapper .right-side-wrapper .right-side-container {
+	 .right-side-wrapper .right-side-container {
 	    margin: 10px 10px 5px 5px;
 	}		
 	.title-wraper.bold {
@@ -379,7 +409,8 @@ img {
 	/* Second section */
 	.second-hightlight-wrapper {
 		min-height: 692px;
-		background-image: url("../images/home/macbookair-new.jpg");
+
+		background-image: url("../../assets/images/home/macbookair-new.jpg");
 	}
 	.new-alert {
 		color: #BF4801;

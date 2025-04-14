@@ -5,9 +5,9 @@ import Right from "./Right_Section/Right";
 const Sixth = () => {
   return (
     <>
-      <div class="sixth-heghlight-wrapper">
-        <div class="container-fluid">
-          <div class="row">
+      <div className="sixth-heghlight-wrapper">
+        <div className="container-fluid">
+          <div className="row">
             {/* Left Side */}
             <Left />
             {/* Right Side */}

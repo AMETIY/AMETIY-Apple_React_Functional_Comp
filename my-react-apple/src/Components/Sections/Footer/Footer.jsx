@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
       <div className="footer-wrapper">
-      <div class="container">
-        <div class="upper-text-container">
+      <div className="container">
+        <div className="upper-text-container">
           <p>
             1. Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro
             promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X
@@ -49,8 +49,8 @@ const Footer = () => {
             and other <a href="https://www.apple.com/promo/">terms </a> apply.
           </p>
         </div>
-        <div class="footer-links-wrapper row">
-          <div class="links-wrapper-1 col-sm-12 col-md">
+        <div className="footer-links-wrapper row">
+          <div className="links-wrapper-1 col-sm-12 col-md">
             <h3>Shop and Learn</h3>
             <ul>
               <li>
@@ -88,7 +88,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-2 col-sm-12 col-md">
+          <div className="links-wrapper-2 col-sm-12 col-md">
             <h3>Services</h3>
             <ul>
               <li>
@@ -123,7 +123,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-3 col-sm-12 col-md">
+          <div className="links-wrapper-3 col-sm-12 col-md">
             <h3>Apple Store</h3>
             <ul>
               <li>
@@ -161,7 +161,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-4 col-sm-12 col-md">
+          <div className="links-wrapper-4 col-sm-12 col-md">
             <h3>For Business</h3>
             <ul>
               <li>
@@ -202,7 +202,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="links-wrapper-5 col-sm-12 col-md">
+          <div className="links-wrapper-5 col-sm-12 col-md">
             <h3>Apple Values</h3>
             <ul>
               <li>
@@ -247,15 +247,15 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="my-apple-wrapper">
+        <div className="my-apple-wrapper">
           More ways to shop: <a href="#">Find an Apple Store</a> or{" "}
           <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.
         </div>
-        <div class="copyright-wrapper row">
-          <div class="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1">
+        <div className="copyright-wrapper row">
+          <div className="copyright col-sm-12 order-2 col-md-8 order-md-1 col-lg-4 order-lg-1">
             Copyright &copy; 2020 Apple Inc. All rights reserved.
           </div>
-          <div class="footer-links-terms  col-sm-12 order-3 col-lg-6 order-lg-2">
+          <div className="footer-links-terms  col-sm-12 order-3 col-lg-6 order-lg-2">
             <ul>
               <li>
                 <a href="#">Privacy Policy</a>
@@ -274,11 +274,11 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div class="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
-            <div class="flag-wrapper">
+          <div className="footer-country  col-sm-12 order-1 col-md-4 order-md-2 text-md-right col-lg-2 order-lg-3">
+            <div className="flag-wrapper">
               <img src={flag} />
             </div>
-            <div class="footer-country-name">United States</div>
+            <div className="footer-country-name">United States</div>
           </div>
         </div>
       </div>

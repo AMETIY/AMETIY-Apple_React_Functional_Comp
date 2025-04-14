@@ -3,17 +3,17 @@ import arcade from "../../../../assets/images/icons/arcade.png"
 const Left = () => {
   return (
     <>
-      <div class="left-side-wrapper col-sm-12 col-md-6">
-        <div class="left-side-container">
-          <div class="top-logo-wrapper">
-            <div class="logo-wrapper">
+      <div className="left-side-wrapper col-sm-12 col-md-6">
+        <div className="left-side-container">
+          <div className="top-logo-wrapper">
+            <div className="logo-wrapper">
               <img src={arcade} />
             </div>
           </div>
-          <div class="description-wraper white">
+          <div className="description-wraper white">
             Agent 8 is a small hero on a big mission.
           </div>
-          <div class="links-wrapper">
+          <div className="links-wrapper">
             <ul>
               <li>
                 <a href="">

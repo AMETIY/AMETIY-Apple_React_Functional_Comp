@@ -1,4 +1,3 @@
-import React from "react";
 import watch from "../../../../assets/images/icons/watch-series5-logo.png"
 const Right = () => {
   return (

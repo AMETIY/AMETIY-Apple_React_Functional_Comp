@@ -1,4 +1,3 @@
-import React from "react";
 import arcade from "../../../../assets/images/icons/arcade.png"
 const Left = () => {
   return (

@@ -1,4 +1,5 @@
-import React from "react";
+
+import './custom'
 import flag from "../../../assets/images/icons/16.png"
 const Footer = () => {
   return (

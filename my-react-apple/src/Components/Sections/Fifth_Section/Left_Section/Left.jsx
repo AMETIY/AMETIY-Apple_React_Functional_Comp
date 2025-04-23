@@ -1,4 +1,3 @@
-import React from "react";
 import logo from "../../../../assets/images/icons/apple-tv-logo.png";
 import banker from "../../../../assets/images/home/banker.png";
 const Left = () => {

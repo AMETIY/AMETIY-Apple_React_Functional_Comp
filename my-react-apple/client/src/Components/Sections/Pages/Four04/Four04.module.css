@@ -1,0 +1,22 @@
+.internal-page-wrapper {
+    background-color: #1c2127;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  h2 {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  Link {
+    color: #007bff;
+    text-decoration: none;
+  }
+Link:hover {
+    text-decoration: underline;
+  }

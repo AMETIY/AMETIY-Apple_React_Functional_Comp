@@ -31,7 +31,7 @@ const YouTube = () => {
         // console.log(data)
         const youtubeVideoData = data.items;
         setVideo(youtubeVideoData);
-        console.log(youtubeVideoData);
+        // console.log(youtubeVideoData);
         setLoading(false);
       })
       .catch((err) => {
@@ -43,7 +43,7 @@ const YouTube = () => {
 
   // Log state changes
   useEffect(() => {
-    console.log("Updated youTubeVideos:", youTubeVideos);
+    // console.log("Updated youTubeVideos:", youTubeVideos);
   }, [youTubeVideos]);
 
   return (

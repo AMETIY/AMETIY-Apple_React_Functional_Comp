@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Form</title>
+</head>
+<form action="http://localhost:3003/add-product" method="post">
+    <br>
+    <div>
+        <h2>Add Products</h2>
+        <label for="url">Product-url:</label>
+        <input type="text" name="ProductUrl" id="url"> <br> <br>
+        <label for="name">Product-name:</label>
+        <input type="text" name="ProductName" id="name"> <br><br>
+    </div>
+
+    <div>
+        <h2>Add product description</h2>
+        <label for="brief">Product-brief-description :</label>
+        <textarea name="ProductBriefDescription" id="brief" cols="20"
+            rows="5">put Your Product brief description here</textarea>
+        <br> <br>
+        <label for="description">Product-description:</label>
+        <textarea name="ProductDescription" id="description" cols="15" rows="5">description</textarea> <br> <br>
+        <label for="image">Product-img:</label>
+        <input type="text" name="ProductImg" id="image"> <br><br>
+        <label for="link">Product_link:</label>
+        <input type="text" name="ProductLink" id="link"> <br><br>
+    </div>
+
+    <div>
+        <h2>Add product Price</h2>
+        <label for="price">Starting-price:</label>
+        <input type="text" name="StartingPrice" id="price"> <br><br>
+        <label for="range">Price-range:</label>
+        <input type="text" name="PriceRange" id="range"> <br><br>
+    </div>
+    <button type="submit">submit</button>
+</form>
+
+</body>
+
+</html>

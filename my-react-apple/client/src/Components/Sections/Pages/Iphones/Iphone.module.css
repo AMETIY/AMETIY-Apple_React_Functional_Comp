@@ -1,0 +1,18 @@
+.links-wrapper ul li {
+  
+    list-style-type: none;
+    
+  }
+  
+  .links-wrapper ul li a:hover {
+    font-size: large;
+    color: #000; 
+    text-decoration: none;
+  }
+
+  .links-wrapper ul li a:after {
+	font-family: "FontAwesome";
+	font-weight: 900;
+	content: "\f105";
+	padding-left: 10px;
+  }

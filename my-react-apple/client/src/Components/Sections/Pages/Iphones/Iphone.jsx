@@ -18,17 +18,18 @@ const Iphone = () => {
         console.log(data);
         setProducts(data.products);
       } catch (err) {
-        console.error("Error fetching YouTube videos:", err);
+        console.error("Error fetching products data:", err.message);
       }
     };
     getProducts();
   }, []);
 
-  console.log(products);
+
+  
   let flip = true;
   return (
     <>
-      <div>
+      
         <section className="internal-page-wrapper my-5 top-100">
           <div className="container">
             <div className="row justify-content-center text-center">
@@ -39,7 +40,7 @@ const Iphone = () => {
                 </div>
               </div>
             </div>
-            {products.map((product) => {
+            {products?.map((product) => {
               console.log("Products:", product);
               let order1 = 1;
               let order2 = 2;
@@ -87,7 +88,7 @@ const Iphone = () => {
             })}
           </div>
         </section>
-      </div>
+      
     </>
   );
 };

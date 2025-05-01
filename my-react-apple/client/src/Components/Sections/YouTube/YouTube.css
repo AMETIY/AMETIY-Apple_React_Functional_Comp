@@ -185,8 +185,12 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    /* -webkit-line-clamp: 3; 3-line limit */
     -webkit-box-orient: vertical;
+  }
+
+  .videoPublishedDate{
+    font-size: 0.9rem;
+    color: #c0392b;
   }
   
   /* Center no podding for no videos message */

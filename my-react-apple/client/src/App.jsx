@@ -3,6 +3,7 @@ import Sections from "./Components/Sections/Sections";
 import Footer from "./Components/Sections/Footer/Footer";
 import "./Common_Resource/css/bootstrap.css";
 // import "./Common_Resource/js/bootstrap.js"
+import './Common_Resource/css/styles.css'
 
 import "./Common_Resource/css/styles.css";
 import { Route, Routes } from "react-router-dom";
@@ -16,7 +17,7 @@ import Watch from "./Components/Sections/Pages/Watch/Watch";
 import Cart from "./Components/Sections/Pages/Cart/Cart";
 import Four04 from "./Components/Sections/Pages/Four04/Four04";
 import SharedLayOut from "./Components/Sections/Pages/SharedLayOut";
-
+import ProductPage from "./Components/Sections/Pages/Iphones/ProductPage/ProductPage";
 function App() {
   return (
     <Routes>
@@ -24,6 +25,7 @@ function App() {
         <Route path="/" element={<Sections />} />
         <Route path="Mac" element={<Mac />} />
         <Route path="Iphone" element={<Iphone />} />
+        <Route path="iphone/:productParam" element = {<ProductPage />} />
         <Route path="Ipad" element={<Ipad />} />
         <Route path="Watch" element={<Watch />} />
         <Route path="Tv" element={<Tv />} />

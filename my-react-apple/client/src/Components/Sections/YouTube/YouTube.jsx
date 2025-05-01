@@ -9,10 +9,10 @@ const YouTube = () => {
   useEffect(() => {
     const API_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
     const CHANNEL_ID = "UCYFDJ7AVYrEz4I5v_7Q5rQQ"; // Apple's YouTube channel
-    const MAX_RESULTS = 6; // Fetch 6 videos
+    const MAX_RESULTS = 12 // Fetch 6 videos
 
     // const url  = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&part=snippet&order=date&maxResults=${MAX_RESULTS}`
-    const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet&order=date&maxResults=12`;
+    const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet&order=date&maxResults=8`;
 
     if (!API_KEY) {
       setError("YouTube API key is missing");
@@ -62,8 +62,8 @@ const YouTube = () => {
                 const vidId = video.id.videoId;
                 const vidLink = `https://www.youtube.com/watch?v=${vidId}`
                 return (
-                  <div key={vidId} className="col-sm-12 col-md-4">
-                    <div className="singleVideoWrapper">
+                  <div key={vidId} className="col-sm-12 col-md-6">
+                    <div className="singleVideoWrapper my-2 ">
                       <div className="videoThumbnail">
                         <a href={vidLink} target="_blank" rel="noopener noreferrer">
                           <img src={video.snippet.thumbnails.high.url} alt={video.snippet.title} />
@@ -76,6 +76,7 @@ const YouTube = () => {
                           </a>
                         </div>
                         <div className="videoDesc">{video.snippet.description}</div>
+                        <div className="videoPublishedDate">{video.snippet.publishedAt}</div>
                       </div>
                     </div>
                   </div>

@@ -9,7 +9,8 @@ const Iphone = () => {
     const getProducts = async () => {
       console.log("useEffect triggered");
       try {
-        const res = await fetch("http://localhost:3003/iphones");
+        // const res = await fetch("http://localhost:3003/iphones");
+        const res = await fetch("/iphone.json");
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
         }
@@ -40,7 +41,7 @@ const Iphone = () => {
                 </div>
               </div>
             </div>
-            {products?.map((product) => {
+            {products?.map((product, index) => {
               console.log("Products:", product);
               let order1 = 1;
               let order2 = 2;

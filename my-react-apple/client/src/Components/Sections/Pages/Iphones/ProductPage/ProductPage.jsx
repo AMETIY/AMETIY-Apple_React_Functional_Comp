@@ -11,7 +11,8 @@ const ProductPage = () => {
   useEffect(() => {
     const getSingleProduct = async () => {
       try {
-        const res = await fetch("http://localhost:3003/iphones");
+        // const res = await fetch("http://localhost:3003/iphones");
+        const res = await fetch("/iphone.json");
         if (!res.ok) {
           throw new Error(`HTTP Error! Status: ${res.status}`);
         }

@@ -100,9 +100,15 @@ img {
 	border-bottom: 1px solid #d2d2d7;
 	padding: 17px 0 10px;
 	margin-bottom: 20px;
+	
 }
 .upper-text-container a {
-	color: #515154;
+	color: black;
+}
+
+.upper-text-container p{
+	font-size: 1.1em !important;  
+
 }
 /*Sixth Section*/
 .sixth-heghlight-wrapper .left-side-wrapper .left-side-container{

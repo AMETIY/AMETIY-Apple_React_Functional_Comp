@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "Product_id": 1,
+      "Name": "iPhone SE",
+      "Description": "Lots to love. Less to spend.",
+      "Price": "$399",
+      "Monthly_plan": "From $9.54/mo. or $229 with trade-in.",
+      "Link_destination": "https://www.apple.com/in/iphone-se/",
+      "img": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_new-iphone-se-white_04152020_big.jpg.medium_2x.jpg",
+      "Product_url": "iphonese"
+    },
+    {
+      "Product_id": 2,
+      "Name": "iPhone 11",
+      "Description": "Lots to love. Less to spend.",
+      "Price": "$449",
+      "Monthly_plan": "From $18.70/mo. or $449 with trade-in.",
+      "Link_destination": "https://www.apple.com/in/iphone-11/",
+      "img": "https://www.apple.com/ca/iphone-16/images/overview/welcome/hero_endframe__dtznvlokjeeu_xsmall_2x.png",
+      "Product_url": "iphone11"
+    },
+    {
+      "Product_id": 3,
+      "Name": "iPhone 11 Pro",
+      "Description": "Pro cameras. Pro display. Pro performance.",
+      "Price": "$679",
+      "Monthly_plan": "From $28.29/mo. or $679 with trade-in.",
+      "Link_destination": "https://support.apple.com/en-in/111879",
+      "img": "https://www.apple.com/v/iphone-16-pro/f/images/overview/welcome/hero_endframe__b3cjfkquc2s2_xsmall_2x.jpg",
+      "Product_url": "iphone11Pro"
+    }
+  ]
+}

@@ -16,14 +16,7 @@ const Header = () => {
               expand="lg"
               variant="dark"
             >
-              <button
-                className="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-              >
-                ☰
-              </button>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Link className="navbar-brand mx-auto" to="/">
                 <img src={logo} />
               </Link>

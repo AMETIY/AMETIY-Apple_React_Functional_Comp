@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Container, Spinner, Alert } from "react-bootstrap";
 // import axios from 'axios'
 import "./YouTube.css";
 
@@ -16,6 +17,33 @@ const YouTube = () => {
 
 
 
+  const fetchYouTubeVideo = async () => {
+    try {
+   
+
+      const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet&order=${sortOption}&maxResults=9`;
+
+      if (!API_KEY) {
+          setError("YouTube API key is missing");
+          setLoading(false);
+          return;
+        }
+
+      const res = await fetch(url);
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await res.json();
+      setVideo(data.items);
+      setLoading(false);
+      // console.info("Fetched videos:", data.items);
+    } catch (err) {
+      console.error("Error Fetching YouTube Videos", err.message);
+          setError(err.message);
+          setLoading(false);
+    }
+  };
 
   useEffect(() => {
 
@@ -48,34 +76,7 @@ const YouTube = () => {
     //     setLoading(false);
     //   });
 
-    const fetchYouTubeVideo = async () => {
-      try {
-     
-
-        const url = `https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=UCE_M8A5yxnLfW0KghEeajjw&part=snippet&order=${sortOption}&maxResults=9`;
-
-        if (!API_KEY) {
-            setError("YouTube API key is missing");
-            setLoading(false);
-            return;
-          }
-
-        const res = await fetch(url);
-
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        const data = await res.json();
-        setVideo(data.items);
-        setLoading(false);
-        // console.info("Fetched videos:", data.items);
-      } catch (err) {
-        console.error("Error Fetching YouTube Videos", err.message);
-            setError(err.message);
-            setLoading(false);
-      }
-    };
-
+    
     fetchYouTubeVideo();
   }, [sortOption]);
 
@@ -115,8 +116,8 @@ const YouTube = () => {
             ):error ? (
               <div className="col-12 text-danger">🚨 Error: {error}</div>
             ):youTubeVideos.length > 0 ? (
-              youTubeVideos.map((video) => {
-                const vidId = video.id.videoId;
+              youTubeVideos.map((singleVideo) => {
+                const vidId = singleVideo.id.videoId;
                 const vidLink = `https://www.youtube.com/watch?v=${vidId}`;
                 return (
                   <div key={vidId} className="col-sm-12 col-md-4">
@@ -128,8 +129,8 @@ const YouTube = () => {
                           rel="noopener noreferrer"
                         >
                           <img
-                            src={video.snippet.thumbnails.high.url}
-                            alt={video.snippet.title}
+                            src={singleVideo.snippet.thumbnails.high.url}
+                            alt={singleVideo.snippet.title}
                           />
                         </a>
                       </div>
@@ -140,14 +141,14 @@ const YouTube = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            {video.snippet.title}
+                            {singleVideo.snippet.title}
                           </a>
                         </div>
                         <div className="videoDesc">
-                          {video.snippet.description}
+                          {singleVideo.snippet.description}
                         </div>
                         <div className="videoPublishedDate">
-                          {video.snippet.publishedAt}
+                          {singleVideo.snippet.publishedAt}
                         </div>
                       </div>
                     </div>

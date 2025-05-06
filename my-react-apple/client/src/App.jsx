@@ -33,7 +33,7 @@ function App() {
         <Route path="Cart" element={<Cart />} />
         <Route path="*" element={<Four04 />} />
       </Route>
-    </Routes>
+    </Routes>  
   );
 }
 

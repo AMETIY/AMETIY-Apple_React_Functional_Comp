@@ -9,13 +9,13 @@ const Four04 = () => {
           <div className="container">
             <div className="row h-100 align-items-center justify-content-center text-center">
               <div className="col-12 mt-5 pt-5">
-                <h1 className="font-weight-bold">
+                <h1 className="font-weight-bold"> </h1>
                   <h2 className={style.h2}>404</h2>
                   <p className={style.p}>Oops! Page not found.</p>
                   <p>
                     <Link to="/">Go back home</Link>
                   </p>
-                </h1>
+               
               </div>
             </div>
           </div>

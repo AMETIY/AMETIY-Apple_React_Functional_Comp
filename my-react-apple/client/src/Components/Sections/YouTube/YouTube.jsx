@@ -41,7 +41,8 @@ const YouTube = () => {
     } catch (err) {
       console.error("Error Fetching YouTube Videos", err.message);
           setError(err.message);
-          setLoading(false);
+        }finally{
+      setLoading(false);
     }
   };
 

@@ -1,4 +1,4 @@
-#  Apple-Clone
+# Apple-Clone
 
 **Apple.com clone** web app built using **React.js** and **Node.js**
 
@@ -19,7 +19,7 @@ I wanted to recreate the **apple.com** website using **Node.js** for my back end
 
 ## 📈 Build Status
 
-✅ Live: **[Deployed on ...👉](https://ametiy-apple-react-clone.vercel.app/)**
+✅ Live: **[Deployed on Vercel 👉](https://ametiy-apple-react-clone.vercel.app/)** 🚀
 
 ---
 

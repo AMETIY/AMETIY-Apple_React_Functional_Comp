@@ -13,7 +13,7 @@ I wanted to recreate the **apple.com** website using **Node.js** for my back end
 ## 📝 Description
 
 - **Back end**: I used **Express** for the server and **MySQL** for the database. My **REST API** is serving the iPhone page data directly from the database.
-- **Front end**: I wanted to improve the current Apple site by integrating a third-party API from **Google Cloud**, specifically **YouTube**, so anyone can have access to Apple's YouTube channel straight from the website.
+- **Front end**: I tried to integrate a third-party API from **Google Cloud**, specifically **YouTube**, so anyone can have access to Apple's YouTube channel straight from the website.
 
 ---
 

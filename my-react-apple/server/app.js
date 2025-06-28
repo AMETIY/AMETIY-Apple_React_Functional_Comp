@@ -11,6 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // const corsOption = {                  //Allows request from a specific origin
 //   origin: "http://localhost:3003/add-product",
+//   origin: "http://localhost:3000",
 //   methods: ["get", "post"],
 // };
 // app.use(cors(corsOption));
